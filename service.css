@@ -1,0 +1,21 @@
+.card-produk {
+      background-color: #FFF1C9;
+      border-radius: 15px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card-produk:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .detail-hover {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card-produk:hover .detail-hover {
+      opacity: 1;
+    }

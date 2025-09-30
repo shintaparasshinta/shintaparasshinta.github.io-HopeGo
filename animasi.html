@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="animasi.css" />
+    <title>HopeGo</title>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="loaded-message" id="loadedMessage">
+      <img src="bahan/HopeGo.png" alt="logo"/>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("loadedMessage").style.display = "block";
+          window.location.href = "awal.html";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

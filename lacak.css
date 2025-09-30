@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.status-step {
+  border-left: 4px solid #ffc107;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.status-step::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #ffc107;
+  border-radius: 50%;
+}
+.current-status::before {
+  background-color: #0d6efd;
+}
